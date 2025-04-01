@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.mainclass7 {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.SetupG {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures footer stays at the bottom */
+}
+
+.navbar9 {
+    width: 100%;
+    height: 0.9in;
+    border-bottom: 1px solid rgb(218, 213, 213);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: white;
+}
+
+.navbar9 img {
+    width: 120px;
+    height: auto;
+    margin-left: 1cm;
+    filter: brightness(100%);
+}
+
+#text43 {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    margin-right: 1cm;
+}
+
+#text43:hover {
+    text-decoration: underline;
+}
+
+.upi_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: black;
+    padding: 20px;
+}
+
+.upidetails {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#text44 {
+    margin-top: 1cm;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+#text45 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+#text46 {
+    margin-top: 10px;
+    margin-bottom: 28px;
+    color: blue;
+}
+
+#upiid {
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(150, 140, 140);
+    border-radius: 2px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#nextbtn7 {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(223, 16, 16);
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    transition: 0.1s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#nextbtn7:hover {
+    background-color: rgb(249, 30, 30);
+}
+
+/* Custom Dropdown */
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(150, 140, 140);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+#dropdownicon {
+    margin-left: auto; /* Moves the icon to the right */
+}
+
+/* Selected Option */
+.selected-option {
+    display: flex;
+    align-items: center;
+}
+
+.selected-option img {
+    width: 50px;
+    height: 25px;
+    margin-right: 10px;
+    border: 1px solid rgb(189, 171, 171);
+    background-color: rgb(216, 211, 211);
+}
+
+/* Dropdown List */
+.dropdown-list {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+    background: #f0f0f0;
+}
+
+.dropdown-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Footer */
+.footer7 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: rgb(242, 242, 242);
+    color: black;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+.ol25, .ol26, .ol27, .ol28 {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.ol25 a, .ol26 a, .ol27 a, .ol28 a {
+    text-decoration: none;
+    color: rgb(113, 109, 109);
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+ol {
+    list-style-type: none;
+}
+
+#text20 {
+    font-size: 18px;
+    margin-bottom: 1cm;
+}
+
+#language4 {
+    width: 100%;
+    max-width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-top: 15px;
+    color: rgb(113, 109, 109);
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar9 {
+        padding: 0 10px;
+    }
+
+    .navbar9 img {
+        width: 100px;
+        margin-left: 0.5cm;
+    }
+
+    #text43 {
+        font-size: 16px;
+        margin-right: 0.5cm;
+    }
+
+    .upi_container {
+        padding: 10px;
+    }
+
+    .upidetails {
+        width: 100%;
+    }
+
+    #upiid {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #nextbtn7 {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .custom-dropdown {
+        height: 40px;
+    }
+
+    .selected-option img {
+        width: 40px;
+        height: 20px;
+    }
+
+    .footer7 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ol25, .ol26, .ol27, .ol28 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #language4 {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+}

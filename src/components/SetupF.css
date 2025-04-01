@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.mainclass6 {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.SetupF {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures footer stays at the bottom */
+}
+
+.navbar8 {
+    width: 100%;
+    height: 0.9in;
+    border-bottom: 1px solid rgb(218, 213, 213);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: white;
+}
+
+.navbar8 img {
+    width: 120px;
+    height: auto;
+    margin-left: 1cm;
+    filter: brightness(100%);
+}
+
+#text42 {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    margin-right: 1cm;
+}
+
+#text42:hover {
+    text-decoration: underline;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-icon {
+    position: absolute;
+    right: 10px;
+    color: rgb(56, 55, 55);
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.cardpayments {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.carddetails {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.carddetails input {
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgb(107, 103, 103);
+    font-size: 16px;
+    padding-left: 15px;
+    color: rgb(47, 49, 49);
+    margin-bottom: 10px;
+}
+
+.plandetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.plandetails a {
+    color: rgb(15, 15, 227);
+    font-weight: 700;
+}
+
+#text47 {
+    font-size: 12px;
+    color: rgb(96, 96, 93);
+    margin-top: 1.3cm;
+    margin-bottom: 10px;
+}
+
+#expd {
+    width: 48%;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#cvv {
+    width: 48%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cardpayments img {
+    width: 1in;
+    height: 20px;
+    border: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#text48, #text49, #text50 {
+    font-size: 13px;
+    color: rgb(121, 120, 120);
+    margin-bottom: 15px;
+}
+
+.extratext {
+    text-align: left;
+}
+
+.final {
+    display: flex;
+    flex-direction: column;
+}
+
+.condition {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#agree {
+    width: 28px;
+    height: 28px;
+    border: 1px solid black;
+    margin-right: 12px;
+}
+
+#start2 {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(212, 25, 25);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.2s;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#start2:hover {
+    background-color: rgb(188, 20, 20);
+}
+
+/* Footer */
+.footer8 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: rgb(242, 242, 242);
+    color: black;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+.ol28, .ol29, .ol30, .ol31 {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.ol28 a, .ol29 a, .ol30 a, .ol31 a {
+    text-decoration: none;
+    color: rgb(113, 109, 109);
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+ol {
+    list-style-type: none;
+}
+
+#text20 {
+    font-size: 18px;
+    margin-bottom: 1cm;
+}
+
+#language4 {
+    width: 100%;
+    max-width: 120px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-top: 15px;
+    color: rgb(113, 109, 109);
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar8 {
+        padding: 0 10px;
+    }
+
+    .navbar8 img {
+        width: 100px;
+        margin-left: 0.5cm;
+    }
+
+    #text42 {
+        font-size: 16px;
+        margin-right: 0.5cm;
+    }
+
+    .cardpayments {
+        padding: 10px;
+    }
+
+    .carddetails {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .carddetails input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .plandetails {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    #expd, #cvv {
+        width: 100%;
+    }
+
+    #start2 {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .footer8 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ol28, .ol29, .ol30, .ol31 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #language4 {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+}

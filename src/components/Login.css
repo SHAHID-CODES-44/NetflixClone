@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.bgimage2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bgimage2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bgimage2 > * {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+/* Navbar */
+.navabar2 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#logo2 img {
+    width: 160px;
+    height: auto;
+    display: block;
+    filter: brightness(100%);
+}
+
+.signin2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signinbox {
+    width: 90%;
+    max-width: 450px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.72);
+    border-radius: 5px;
+    margin-top: 2in;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 30px 20px;
+}
+
+#inp3, #pass1 {
+    width: 100%;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 15px;
+    color: white;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+#signbtn1, #signincode {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#signbtn1 {
+    background-color: rgb(209, 6, 6);
+}
+
+#signincode {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#text12 {
+    margin: 20px 0;
+}
+
+.signinbox a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.extra1 {
+    width: 100%;
+    text-align: left;
+}
+
+#remember {
+    margin-bottom: 20px;
+    margin-top: 13px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+#text13 {
+    font-size: 15px;
+    color: rgb(183, 183, 183);
+}
+
+#text15 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#text14 {
+    margin-top: 10px;
+    font-size: 13px;
+    color: rgb(183, 183, 183);
+    line-height: 18px;
+}
+
+#text16 {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer2 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.ol5, .ol6, .ol7, .ol8 {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.ol5 a, .ol6 a, .ol7 a, .ol8 a {
+    text-decoration: underline;
+    color: rgb(168, 160, 160);
+    line-height: 1.5em;
+}
+
+ol {
+    list-style-type: none;
+}
+
+#language2 {
+    padding: 5px;
+    width: 120px;
+    font-size: 16px;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navabar2 {
+        padding: 0 10px;
+    }
+
+    #logo2 img {
+        width: 120px;
+    }
+
+    .signinbox {
+        width: 90%;
+        max-width: 100%;
+        margin-top: 1in;
+        padding: 20px;
+    }
+
+    #inp3, #pass1, #signbtn1, #signincode {
+        width: 100%;
+    }
+
+    .footer2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ol5, .ol6, .ol7, .ol8 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #language2 {
+        margin-left: 0;
+    }
+}

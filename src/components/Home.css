@@ -1,0 +1,119 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Main Layout */
+.mainclass9 {
+    width: 100%;
+    height: 100vh;
+    background-color: #141414;
+    color: white;
+}
+
+/* Navbar */
+.navbar11 {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* Left Side */
+.leftside {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.leftside img {
+    height: 40px;
+}
+
+.leftside a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.leftside a:hover {
+    color: gray;
+}
+
+/* Right Side Icons */
+.rightside {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-icon, .bell-icon, .smile-icon {
+    cursor: pointer;
+    transition: transform 0.3s;
+    color: white;
+}
+
+.search-icon:hover, .bell-icon:hover, .smile-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Movie Details Section */
+.moviedetails-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#Avenger1 {
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#Avenger1:hover {
+    transform: scale(1.05);
+}
+
+/* My List Section */
+.My-List {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#Movie1 {
+    width: 150px;
+    height: 220px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#Movie1:hover {
+    transform: scale(1.1);
+}
+
+.movie-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#text80 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
